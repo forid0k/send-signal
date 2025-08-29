@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <title>Signal Sender</title>
+</head>
+<body style="background:#0f172a; color:white; font-family:sans-serif; text-align:center; padding:20px">
+  <h2>📡 Send Trading Signal</h2>
+  
+  <form method="POST" action="send.php">
+    <label>⏰ Timeframe:</label>
+    <select name="timeframe">
+      <option value="30s">30 Seconds</option>
+      <option value="1m">1 Minute</option>
+      <option value="3m">3 Minutes</option>
+      <option value="5m">5 Minutes</option>
+    </select><br><br>
+
+    <label>🎯 Signal:</label>
+    <select name="signal">
+      <option value="BIG">BIG</option>
+      <option value="SMALL">SMALL</option>
+    </select><br><br>
+
+    <label>🎨 Template Style:</label>
+    <select name="style">
+      <option value="1">Style 1 (Premium)</option>
+      <option value="2">Style 2 (Modern)</option>
+      <option value="3">Style 3 (Minimal)</option>
+    </select><br><br>
+
+    <button type="submit" style="padding:10px 20px; background:#22c55e; border:none; border-radius:6px; color:white; font-size:16px;">🚀 Send Signal</button>
+  </form>
+</body>
+</html>
